@@ -73,7 +73,7 @@ public:
 	CBoundingBox* GetBoundingBox()			{ return m_pBoundingBox; }
 	CTransform* GetTransform()				{ return m_pTransform; }
 	// Get position from the transform component
-	glm::vec3 GetPosition();
+	virtual glm::vec3 GetPosition();
 	// Get rotation from the transform component
 	glm::vec3 GetRotation();
 	// Get rotationY from the transform component

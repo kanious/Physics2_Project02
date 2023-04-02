@@ -29,6 +29,7 @@ public:
 	void SetRigidBody(Engine::iRigidBody* pBody);
 	void SetTransperancy();
 	void AddForceToRigidBody(glm::vec3 vPos);
+	virtual glm::vec3 GetPosition();
 private:
 	void KeyCheck(const _float& dt);
 

@@ -49,6 +49,14 @@ void BGObject::AddForceToRigidBody(vec3 vPos)
 	m_pRigidBody->ApplyForce(vPos);
 }
 
+glm::vec3 BGObject::GetPosition()
+{
+	if (nullptr == m_pRigidBody)
+		return vec3(0.f);
+
+	return m_pRigidBody->GetPosition();
+}
+
 void BGObject::KeyCheck(const _float& dt)
 {
 	//if (nullptr == m_pInputDevice || nullptr == m_pTransform || nullptr == m_pRigidBody)
